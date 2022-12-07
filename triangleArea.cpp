@@ -4,12 +4,13 @@
 // Created on: Nov 2022
 // This program finds the area of a triangle
 
-
 #include <iostream>
+
 
 float calculateAreaTriangle(int base, int height) {
     // This function finds the volume of the cylinder
     float area;
+
 
     if (base <= 0 || height <= 0) {
         area = -1;
