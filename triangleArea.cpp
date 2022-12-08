@@ -16,7 +16,7 @@ float calculateAreaTriangle(int base, int height) {
         area = -1;
         return area;
     } else {
-        area = (base * height) / 2;
+        area = (base * height) / 2.0;
         return area;
     }
 }
