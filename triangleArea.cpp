@@ -40,11 +40,17 @@ int main() {
     try {
         base = std::stoi(base_from_user);
         height = std::stoi(height_from_user);
+
         // Call function
         area = calculateAreaTriangle(base, height);
-        std::cout << "The area of a triangle with a base length of "
-                  << base << " cm and the height of " << height << " cm is "
-                  << area << " cm³.";
+
+        if(area == -1) {
+            std::cout << "Invalid Input" << std::endl;
+        } else {
+            std::cout << "The area of a triangle with a base length of "
+                      << base << " cm and the height of " << height << " cm is "
+                      << area << " cm³.";
+        }
     } catch (std::invalid_argument) {
         std::cout << "Invalid Input." << std::endl;
     }
