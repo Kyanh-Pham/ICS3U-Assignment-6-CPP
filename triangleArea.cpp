@@ -43,13 +43,12 @@ int main() {
 
         // Call function
         area = calculateAreaTriangle(base, height);
-
-        if(area == -1) {
+        if (area == -1) {
             std::cout << "Invalid Input" << std::endl;
         } else {
             std::cout << "The area of a triangle with a base length of "
-                      << base << " cm and the height of " << height << " cm is "
-                      << area << " cm³.";
+             << base << " cm and the height of " << height << " cm is "
+              << area << " cm³.";
         }
     } catch (std::invalid_argument) {
         std::cout << "Invalid Input." << std::endl;
