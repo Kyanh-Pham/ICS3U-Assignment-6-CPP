@@ -8,7 +8,7 @@
 
 
 float calculateAreaTriangle(int base, int height) {
-    // This function finds the volume of the cylinder
+    // This function finds the area of the triangle
     float area;
 
 
